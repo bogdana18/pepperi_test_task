@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test task</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main>
+      <h1>Test</h1>
+      <div class="content">
+        <div class="overview">
+          <span class="item_title">Name/Value Pair</span>
+          <input class="input item" type="text" placeholder="Name=Value" />
+
+          <span class="item_title">Name/Value Pair List</span>
+          <div class="hide_scrollbar">
+            <textarea
+              rows="20"
+              cols="50"
+              disabled
+              class="textarea list"
+              placeholder="Hello=World"
+            >
+            </textarea>
+          </div>
+        </div>
+
+        <div class="control">
+          <div class="control_group">
+            <input type="button" value="Add" class="btn add">
+            <input type="button" value="Delete" class="btn delete">
+          </div>
+
+          <div class="sort_group">
+            <input type="button" value="Sort by Name" class="btn sort-name">
+            <input type="button" value="Sort by Value" class="btn sort-value">
+            
+            <input type="button" value="Show XML" class="btn show-xml">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script/app.js"></script>
+</body>
+</html>
